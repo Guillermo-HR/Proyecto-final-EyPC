@@ -199,11 +199,11 @@ class ensamblador(QWidget):
 
 
 
-        if success:
+        if success == True:
             self.result_label.setText("Ensamblado exitoso")
             self.setStyleSheet("background-color: #379974 ;")  # Color azul fuerte
         else:
-            self.result_label.setText("Error de ensamblado")
+            self.result_label.setText(f"Error de ensamblado\n{success}")
             self.setStyleSheet("background-color: #800000;")  # Color rojo
 
 

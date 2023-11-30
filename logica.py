@@ -1104,8 +1104,8 @@ def ensamblar(codigo):
         pasada2()
         agregarTS()
         crearLST('programa')
-    except:
-        return False
+    except Exception as e: 
+        return e
     return True
 
 if __name__ == "__main__":

@@ -1,6 +1,17 @@
      ORG 300
 
+DEFMACRO macro1: #a1, #a2, #eti
+#eti:LD #a1, #a2
+cp 3
+DEC A
+DEFMACRO macro2: #a3
+ld c,#a3
+ENDMACRO
+ENDMACRO
+
 ; Programa:
+macro1:x,l,emacro
+macro2:b
 inicio:
      LD A, (360)                ; Cargar el numero al que se le va a calcular el factorial
      CP 9
