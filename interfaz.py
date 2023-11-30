@@ -76,7 +76,7 @@ class pagina2(QWidget):
 
        #ACCION A RREALIZAR al presionar boton "MANUAL"_______________________________________________________________________
     def B_manual(self):
-        pdf_file_path = 'prueba1.pdf'  # La ruta del PDF ***********
+        pdf_file_path = 'MAnual de Usuario.pdf'  # La ruta del PDF ***********
         QDesktopServices.openUrl(QUrl.fromLocalFile(pdf_file_path))
 
     def Ventana_programa(self):
